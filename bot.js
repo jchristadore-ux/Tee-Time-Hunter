@@ -8,7 +8,7 @@ let page;
 
 async function launchBrowser() {
   browser = await chromium.launch({
-    headless: false, // IMPORTANT: keeps CAPTCHA manual
+    headless: true, // IMPORTANT: keeps CAPTCHA manual
     slowMo: 50
   });
 
