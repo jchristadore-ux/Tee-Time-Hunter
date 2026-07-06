@@ -1,0 +1,13 @@
+{
+  "name": "tee-time-hunter",
+  "version": "1.0.0",
+  "main": "bot.js",
+  "type": "module",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "playwright": "^1.40.0",
+    "node-fetch": "^3.3.2"
+  }
+}
