@@ -6,6 +6,15 @@ import { runRetryLoop } from "./watcher.js";
 let browser;
 let page;
 
+const browser = await chromium.launch({
+    headless: true,
+    args: [
+        "--no-sandbox",
+        "--disable-setuid-sandbox",
+        "--disable-dev-shm-usage"
+    ]
+});
+
 async function launchBrowser() {
   browser = await chromium.launch({
     headless: true, // IMPORTANT: keeps CAPTCHA manual
